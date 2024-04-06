@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdo do Post</title>
+</head>
+<body>
+    <h3>{{post.id}} - {{post.titulo}}</h3>
+    <h4 style="color:blue">AUTOR: {{post.autor}}</h4>
+    <p>Publicação: {{post.data_publicacao}}</p><hr>
+    <p>{{post.conteudo | safe}}</p>
+</body>
+</html>

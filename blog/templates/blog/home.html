@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro Template</title>
+</head>
+<body>
+    <h3>Lista de Posts</h3><hr>
+    <ul>
+        {% for p in posts %}
+            <li>{{p.id}} - {{p.autor}} - {{p.titulo}} - <a href="{% url 'post_detail' p.id %}">Conteudo</a></li>
+        {% endfor %}
+    </ul>
+
+    <img src="{% static 'blog/imagem.jpg'%}" width="200px" height="100px">
+</body>
+</html>
